@@ -106,7 +106,7 @@ end
 function ActionStart()
     runProgThread = true
     Citizen.CreateThread(function()
-        TriggerEvent("DP_Inventory:closeinventory")
+		TriggerEvent('hsn-inventory:busy', true) end
         while runProgThread do
             if isDoingAction then
                 if not isAnim then
@@ -229,6 +229,7 @@ function ActionCleanup()
             ClearPedTasks(ped)
         end
     end
+
     if prop_net and NetToObj(prop_net) ~= 0 and NetToObj(prop_net) ~= nil then
         DetachEntity(NetToObj(prop_net), 1, 1)
         DeleteEntity(NetToObj(prop_net))
@@ -240,6 +241,7 @@ function ActionCleanup()
         propTwo_net = nil
     end
     runProgThread = false
+	TriggerEvent('hsn-inventory:busy', false) end
 end
 
 function loadAnimDict(dict)
