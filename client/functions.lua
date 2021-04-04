@@ -106,7 +106,7 @@ end
 function ActionStart()
     runProgThread = true
     Citizen.CreateThread(function()
-		TriggerEvent('hsn-inventory:busy', true) end
+		TriggerEvent('hsn-inventory:busy', true)
         while runProgThread do
             if isDoingAction then
                 if not isAnim then
@@ -241,7 +241,7 @@ function ActionCleanup()
         propTwo_net = nil
     end
     runProgThread = false
-	TriggerEvent('hsn-inventory:busy', false) end
+	TriggerEvent('hsn-inventory:busy', false)
 end
 
 function loadAnimDict(dict)
