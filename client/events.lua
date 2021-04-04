@@ -11,7 +11,6 @@ end)
 RegisterNetEvent("mythic_progbar:client:ProgressWithTickEvent")
 AddEventHandler("mythic_progbar:client:ProgressWithTickEvent", function(action, tick, finish)
 	Process(action, nil, tick, finish)
-	
 end)
 
 RegisterNetEvent("mythic_progbar:client:ProgressWithStartAndTick")
