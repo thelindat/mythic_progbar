@@ -1,3 +1,7 @@
+<h5 align='center'>Modified to support <i><b>hsn-inventory</i></b></h5>
+
+***
+
 # Mythic Progress Bar
 A simple action bar resource which allows actions to be visually displayed to the player and provides a callback function so actions can be peformed if the event was cancelled or not.
 
