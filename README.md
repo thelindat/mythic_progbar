@@ -1,4 +1,4 @@
-<h5 align='center'>Modified to support <i><b>hsn-inventory</i></b></h5>
+<h5 align='center'>Modified to support <i><b>linden_inventory</i></b></h5>
 
 ***
 
